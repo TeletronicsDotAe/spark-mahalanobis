@@ -32,5 +32,6 @@ lazy val root = (project in file(".")).
         Some("TLT Maven releases" at "http://nexus:8081/nexus/content/repositories/releases")
       }
     },
-    credentials += Credentials("Sonatype Nexus Repository Manager", "nexus", "deployment", "Liace12345")
+    credentials += Credentials("Sonatype Nexus Repository Manager", "nexus", "deployment", "Liace12345"),
+    updateOptions := updateOptions.value.withCachedResolution(true)
   )
