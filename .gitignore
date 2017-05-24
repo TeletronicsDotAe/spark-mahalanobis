@@ -1,2 +1,6 @@
 *.class
 *.log
+
+# Ignore directories
+.idea/
+target/
